@@ -6,7 +6,7 @@
     <title>GATO Y RATON</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body onclick="playAudio()">
     <main>
         <header id="Cabeza">
             <div class="jugador jugador-active" id="jugadorX" onclick="elegirJugador('X')">X</div>
@@ -33,9 +33,11 @@
 
         <button id="Reinicio">Reiniciar Juego</button>
     </main>
-      <audio>
-     <source src="cancion.mp3" type="#">
+    
+      <audio id="musica">
+     <source src="cancion.mp3" type="audio/mpeg">
     </audio>
+
     <script src="datos.js"></script>
 </body>
 </html>

@@ -138,3 +138,7 @@ reinicio.addEventListener('click', () => {
     pausarJuego = false;
     subCabeza.textContent = 'Elige';
 });
+
+function playAudio() {
+    document.getElementById("musica").play();
+}
