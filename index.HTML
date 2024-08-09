@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATO Y RATON</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header id="Cabeza">
+            <div class="jugador jugador-active" id="jugadorX" onclick="elegirJugador('X')">X</div>
+            <h3 id="SubCabeza">Elige</h3>
+            <div class="jugador" id="jugadorO" onclick="elegirJugador('O')">O</div>
+        </header>
+
+        <div id="Contadores">
+            <div id="contadorX">Victorias X: 0</div>
+            <div id="contadorO">Victorias O: 0</div>
+        </div>
+
+        <div id="Bordes">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+
+        <button id="Reinicio">Reiniciar Juego</button>
+    </main>
+      <audio>
+     <source src="cancion.mp3" type="#">
+    </audio>
+    <script src="datos.js"></script>
+</body>
+</html>
